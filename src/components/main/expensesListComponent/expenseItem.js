@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import DateComponent from "../../common/DateComponent";
 
 const ExpenseItem = (props) => {
+    debugger
     return(
        <li className="center list-item">
         <Card border="primary" style={{ width: '100%' }}>

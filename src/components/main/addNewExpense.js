@@ -7,6 +7,7 @@ import { Button } from "react-bootstrap";
 const AddNewExpense = (props) => {
     
     const [expenseData,setExpenseData] = useState({
+        id:"",
         titile:"",
         Amount:"",
         date:"",
@@ -16,14 +17,23 @@ const AddNewExpense = (props) => {
     const [enteredAmount,setEnteredAmount] = useState("");
     const [enteredDate,setEnteredDate] = useState("");
 
-    const onSubmitHandler = () => {
-        debugger
-        setExpenseData({
-            title : enteredTitle,
-            Amount : enteredAmount,
-            date : enteredDate
-        })
-        console.log(expenseData);
+    const onSubmitHandler = (event) => {
+        event.preventDefault();
+        const newExpense = {
+            id:Math.random().toString(),
+            title:enteredTitle,
+            amount:enteredAmount,
+            date:enteredDate,
+        }
+        setExpenseData(newExpense);
+        props.newExpenseAdditionHandler(newExpense);
+        clearEnteredExpenseData();
+    }
+
+    const clearEnteredExpenseData = () => {
+        setEnteredTititle("");
+        setEnteredDate("");
+        setEnteredAmount("");
     }
 
     const onTitleChangeHandler = (event)=>{
