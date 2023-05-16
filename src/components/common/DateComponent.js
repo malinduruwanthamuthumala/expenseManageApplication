@@ -4,10 +4,10 @@ const DateComponent = (props) =>{
 
       const months = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
 
-      debugger
-       const year = props.date.getFullYear();
-       const month = months[props.date.getMonth()];
-       const day = props.date.getDate()
+       const newDate = new Date(props.date)
+       const year = newDate.getFullYear();
+       const month = months[newDate.getMonth()];
+       const day = newDate.getDate();
 
 
     return(

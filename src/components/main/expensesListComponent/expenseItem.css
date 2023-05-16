@@ -1,6 +1,6 @@
 .expense_item {
     margin-top: 20px;
-    background-color: antiquewhite;
+    background-color: rgb(160, 193, 238);
     margin:auto
 }
 
@@ -9,7 +9,7 @@ height:150px;
 }
 
 .expense_item_price{
-    color:brown;
+    color:rgba(53, 25, 122, 0.684);
     padding: 5px;
     font-weight: 500;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -32,4 +32,5 @@ height:150px;
     text-align: center;
     align-items: center;
     margin-left: -20px;
+    padding: 10px;
 }
