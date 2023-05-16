@@ -1,0 +1,10 @@
+.date {
+    height:50px;
+    width:250px;
+    background-color: rgba(25, 19, 33, 0.962);
+    padding:10px;
+}
+
+.date_text{
+    color:white;
+}
