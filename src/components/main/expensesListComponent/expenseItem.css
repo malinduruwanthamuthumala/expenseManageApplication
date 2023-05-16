@@ -1,0 +1,35 @@
+.expense_item {
+    margin-top: 20px;
+    background-color: antiquewhite;
+    margin:auto
+}
+
+.add_new_expense{
+height:150px;
+}
+
+.expense_item_price{
+    color:brown;
+    padding: 5px;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.expense_item_title{
+    padding: 5px;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.expense_item{
+    padding:5px;
+    margin:0 auto;
+}
+
+.list-item{
+    margin:0 auto;
+    text-align: center;
+    align-items: center;
+    margin-left: -20px;
+}
